@@ -1,8 +1,7 @@
-/* ========================= DESKTOP ==================== */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0rem;
+  padding: 0rem;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
@@ -84,54 +83,9 @@ body {
 .menu .bar:nth-child(3) {
   background: var(--blue);
 }
-p {
-  font-weight: 15;
-}
-.home {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 10%;
-}
 
-.home-texto {
-  max-width: 37rem;
-}
-.home-texto .texto-h4 {
-  font-size: 1.5rem;
-  color: var(--red);
-  margin-bottom: 1rem;
-}
-.home-texto .texto-h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  line-height: 4rem;
-}
-.home-texto p {
-  margin-bottom: 4rem;
-}
-
-.home-img img {
-  width: 100%;
-}
-
-.div-btn {
-  display: inline-block;
-  flex-wrap: wrap;
-  display: block;
-}
-.home-btn {
-  padding: 15px 20px;
-  background: var(--blue);
-  color: var(--white);
-  border-radius: 10px;
-  font-weight: 700;
-  transition: all 0.5s;
-}
-.home-btn:hover {
-  background: var(--blueFine);
+.texto-quemSomos {
+  margin: 10px;
 }
 
 /* ================ RESPONSIVO ================*/

@@ -48,7 +48,7 @@
 .navegacao ul {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 1rem;
 }
 
 .navegacao ul li a {
