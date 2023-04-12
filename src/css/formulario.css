@@ -15,16 +15,14 @@
   --blueLight: #87cefa; /*Ligth Sky blue*/
   --blueLight2: #87cefaec;
   --blueFine: #225ed8;
+  --darkBlue: #101026;
   --background: #f7f4f0;
   --white: #fff;
   --dark: #000000;
   --darkLigth: #00000056;
 }
+/*INICIO barra navegação */
 
-body {
-  color: var(--blue);
-  background-color: var(--white);
-}
 .navegacao {
   display: flex;
   align-items: center;
@@ -70,7 +68,9 @@ body {
   cursor: pointer;
   display: none;
 }
+/* FIM Barra de navegação */
 
+/* Barra do menu hamburguer */
 .menu .bar {
   display: block;
   width: 28px;
@@ -84,10 +84,53 @@ body {
 .menu .bar:nth-child(3) {
   background: var(--blue);
 }
-/* ================ CORPO FORMULÁRIO ========================*/
-.base-form{
-  
+/* Fim Barra do menu hamburguer */
+
+/* INICIO BODY */
+.pai-base-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 45px;
+  gap: 120px;
 }
+.base-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 12rem;
+  gap: 1rem;
+}
+input,
+textarea {
+  width: 20rem;
+  box-shadow: none;
+}
+label {
+  font-size: 20px;
+}
+button {
+  display: inline-block;
+  flex-wrap: wrap;
+  display: block;
+  border: none;
+}
+button {
+  padding: 9px 20px;
+  box-shadow: none;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+button:hover {
+  background: var(--blueFine);
+}
+/* =================================FIM BODY =====================================*/
 
 /* ================ RESPONSIVO ================*/
 
@@ -137,3 +180,4 @@ body {
     border-radius: 3px;
   }
 }
+/*================================= TESTE =================================*/

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="./src/css/formulario.css" />
     <title>Animo Consultoria | FORMULÁRIO</title>
   </head>
@@ -17,7 +16,7 @@
         <li class="nav-item"><a href="./index.html">Home</a></li>
         <li class="nav-item"><a href="#">Quem Somos</a></li>
         <li class="nav-item"><a href="#">Equipe</a></li>
-        <li class="nav-item"><a href="./formulário.html">Contato</a></li>
+        <li class="nav-item"><a href="./formulario.html">Contato</a></li>
       </ul>
       <div class="menu">
         <span class="bar"></span>
@@ -27,9 +26,39 @@
     </nav>
   </header>
   <body>
-    <section class="base-form">
-      <h2>FORMULÁRIO</h2>
-      <form action="" method="post"></form>
+    <section class="pai-base-form">
+      <section class="base-form">
+        <h2>FORMULÁRIO</h2>
+        <form action="" method="post"></form>
+        <label>Nome</label>
+        <input
+          type="text"
+          name="Nome"
+          placeholder="Digite Seu nome"
+          autocomplete="off"
+        />
+        <label>Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Digite seu email"
+          autocomplete="off"
+        />
+        <label>Mensagem</label>
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Digite sua mensagem"
+        ></textarea>
+        <a href="./formularioEnviado.html">
+          <button type="submit">Enviar</button>
+          <input
+            type="hidden"
+            name="redirectTo"
+            value="./formularioEnviado.html"
+        /></a>
+      </section>
     </section>
   </body>
   <script src="./src/script.js"></script>
