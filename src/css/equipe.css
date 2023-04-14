@@ -29,7 +29,7 @@
   color: var(--darkLigth);
   width: 100%;
   transition: all 0.5s;
-  /*position: fixed;*/
+  position: relative;
 }
 .navegacao .logo {
   color: var(--blueFine);
@@ -75,13 +75,43 @@
 .menu .bar:nth-child(3) {
   background: var(--blue);
 }
-
+.card-pai-raiz {
+  gap: 2px;
+}
 .card-pai {
-  margin-top: 240px;
-  border: 2px solid black;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
+.card-filho {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-child {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 17%;
+}
+
+.card-nome {
+  font-size: 20px;
+  font-weight: 600;
+}
+.texto-descricao {
+  text-align: center;
+}
 /* ======= MENU RESPONSIVO ===========*/
+
 @media (max-width: 785px) {
   .navegacao {
     padding: 18px 20px;
