@@ -19,7 +19,7 @@
   --dark: #000000;
   --darkLigth: #00000056;
 }
-
+/*=========== INICIO NAVBAR ====================*/
 .navegacao {
   display: flex;
   align-items: center;
@@ -75,6 +75,7 @@
 .menu .bar:nth-child(3) {
   background: var(--blue);
 }
+/*=========== FIM NAVBAR ====================*/
 .card-pai-raiz {
   gap: 2px;
 }
@@ -145,9 +146,11 @@
     background: var(--blueLight2);
     gap: -10px;
     transition: 0.3s;
+    
   }
   .nav-menu.ativo {
     right: 0;
+    gap: 2px;
   }
   .nav-item {
     margin: 16px 0;

@@ -158,7 +158,6 @@ p {
   }
   .menu.ativo .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-    /* background-color: #000000;  para botar o X preto e azul */
   }
   .nav-menu {
     position: fixed;
@@ -173,6 +172,7 @@ p {
   }
   .nav-menu.ativo {
     right: 0;
+    gap: 2px;
   }
   .nav-item {
     margin: 16px 0;

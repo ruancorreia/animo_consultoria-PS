@@ -8,7 +8,7 @@
   font-family: "Open Sans", sans-serif;
   color: #000000;
 }
-
+/*=========== INICIO NAVBAR ====================*/
 :root {
   --blue: #1e90ff; /*DodgerBlue*/
   --blueLight: #87cefa; /*Ligth Sky blue*/
@@ -33,7 +33,7 @@ body {
   color: var(--darkLigth);
   width: 100%;
   transition: all 0.5s;
-  position: fixed;
+  /* position: fixed;*/
 }
 
 .navegacao .logo {
@@ -83,11 +83,12 @@ body {
 .menu .bar:nth-child(3) {
   background: var(--blue);
 }
+/*=========== FIM NAVBAR ====================*/
 
-.texto-quemSomos {
-  margin: 10px;
+.texto1 {
+  margin: 8vh;
+  display: flex;
 }
-
 /* ================ RESPONSIVO ================*/
 
 @media (max-width: 785px) {
@@ -124,9 +125,11 @@ body {
     background: var(--blueLight2);
     gap: -10px;
     transition: 0.3s;
+    overflow: hidden;
   }
   .nav-menu.ativo {
     right: 0;
+    gap: 2px;
   }
   .nav-item {
     margin: 16px 0;
